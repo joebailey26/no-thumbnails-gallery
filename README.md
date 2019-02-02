@@ -6,7 +6,7 @@ This project requires Featherlight and Featherlight's gallery extension, an ultr
 [You can check out Featherlight here.](https://github.com/noelboss/featherlight)
 
 ## Demo
-Try the [demo]() to see the gallery in action. Simply click on one image, and have a lightbox with multiple images come up.
+Try the [demo](https://joebailey26.github.io/no-thumbnails-gallery/demo/no-thumbnails-gallery.html) to see the gallery in action. Simply click on one image, and have a lightbox with multiple images come up.
 
 ## Install
 1. Download and include gallery.php inside your folder with the set of images you want to display in a lightbox.
