@@ -3,7 +3,7 @@
 
 ### Featherlight
 This project requires Featherlight and Featherlight's gallery extension, an ultraslim jQuery lightbox.
-[You can check out Featherlight here.](https://github.com/noelboss/featherlight)
+[You can check out Featherlight here.](https://no-thumbnails-gallery.joebailey.xyz/)
 
 ## Demo
 Try the [demo](https://joebailey26.github.io/no-thumbnails-gallery/demo/no-thumbnails-gallery.html) to see the gallery in action. Simply click on one image, and have a lightbox with multiple images come up.
