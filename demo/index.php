@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>no-thumbnails-gallery</title>
+		<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet"/>
+		<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<a id="images" class="gallery" href="javascript:void(0)">
+			<img src="content/images/demo-1.jpg" alt="demo" width="50%">
+		</a>
+		<div class="none" style="display:none" data-featherlight-gallery data-featherlight-filter="a"></div>
+		<script src="//code.jquery.com/jquery-latest.js"></script>
+		<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		  $(".gallery").click(function(){
+			var $images = '.none';
+			var $folder1 = "content/";
+			var $folder2 = $folder1 + $(this).attr('id')
+			var post = $.post($folder2 + "/gallery.php", {images: $images} );
+			post.done(function(data) {
+			  $($images).html(data);
+			});
+		  });
+		</script>
+	</body>
+</html>
